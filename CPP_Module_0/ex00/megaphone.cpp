@@ -6,7 +6,7 @@
 /*   By: yesoytur <yesoytur@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 12:48:04 by yesoytur          #+#    #+#             */
-/*   Updated: 2026/04/21 14:21:15 by yesoytur         ###   ########.fr       */
+/*   Updated: 2026/04/23 00:40:50 by yesoytur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static void	megaphone(std::string str)
 
 	while (str[j])
 	{
-		std::cout << (char) std::toupper(str[j]) << std::endl;
+		std::cout << (char) std::toupper((unsigned char)str[j]);
 		j++;
 	}	
 }
