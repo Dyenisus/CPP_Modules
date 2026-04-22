@@ -6,9 +6,11 @@
 /*   By: yesoytur <yesoytur@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 14:45:48 by yesoytur          #+#    #+#             */
-/*   Updated: 2026/04/22 11:40:53 by yesoytur         ###   ########.fr       */
+/*   Updated: 2026/04/22 12:07:49 by yesoytur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#pragma once
 
 #ifndef CONTACTS_HPP
 # define CONTACTS_HPP

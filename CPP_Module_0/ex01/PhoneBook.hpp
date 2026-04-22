@@ -6,9 +6,11 @@
 /*   By: yesoytur <yesoytur@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 14:46:05 by yesoytur          #+#    #+#             */
-/*   Updated: 2026/04/21 20:44:22 by yesoytur         ###   ########.fr       */
+/*   Updated: 2026/04/22 12:08:15 by yesoytur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#pragma once
 
 #ifndef PHONEBOOK_HPP
 # define PHONEBOOK_HPP
