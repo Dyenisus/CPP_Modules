@@ -6,11 +6,11 @@
 /*   By: yesoytur <yesoytur@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 14:45:07 by yesoytur          #+#    #+#             */
-/*   Updated: 2026/04/22 11:40:43 by yesoytur         ###   ########.fr       */
+/*   Updated: 2026/04/23 17:32:11 by yesoytur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "PhoneBook.hpp"
+#include "PhoneBook.hpp"
 
 PhoneBook::PhoneBook()
 {
@@ -64,7 +64,7 @@ void	PhoneBook::addContact()
 	darkestSecret = promptField("Darkest secret");
 	if (std::cin.eof()) return ;
 
-	_contacts[_oldest].setContact(_oldest, firstName, lastName,
+	_contacts[_oldest].setContact(firstName, lastName,
 		nickName, phoneNumber, darkestSecret);
 	_oldest = (_oldest + 1) % 8;
 	if (_count < 8)

@@ -6,7 +6,7 @@
 /*   By: yesoytur <yesoytur@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 14:45:48 by yesoytur          #+#    #+#             */
-/*   Updated: 2026/04/23 01:24:35 by yesoytur         ###   ########.fr       */
+/*   Updated: 2026/04/23 17:31:58 by yesoytur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,7 @@ class Contact
 	public:
 		Contact();
 		~Contact();
-		void		setContact(int index,
-								const std::string& firstName,
+		void		setContact(const std::string& firstName,
 								const std::string& lastName,
 								const std::string& nickName,
 								const std::string& phoneNumber,
