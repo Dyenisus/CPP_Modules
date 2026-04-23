@@ -14,32 +14,21 @@
 #include <cmath>
 #include "Fixed.hpp"
 
-Fixed::Fixed(void) : _value(0) {
-	std::cout << "Default constructor called" << std::endl;
-}
+Fixed::Fixed(void) : _value(0) {}
 
-Fixed::Fixed(const int n) : _value(n << _fractBits) {
-	std::cout << "Int constructor called" << std::endl;
-}
+Fixed::Fixed(const int n) : _value(n << _fractBits) {}
 
-Fixed::Fixed(const float f) : _value(static_cast<int>(roundf(f * (1 << _fractBits)))) {
-	std::cout << "Float constructor called" << std::endl;
-}
+Fixed::Fixed(const float f) : _value(static_cast<int>(roundf(f * (1 << _fractBits)))) {}
 
-Fixed::Fixed(const Fixed& other) : _value(other._value) {
-	std::cout << "Copy constructor called" << std::endl;
-}
+Fixed::Fixed(const Fixed& other) : _value(other._value) {}
 
 Fixed& Fixed::operator=(const Fixed& other) {
-	std::cout << "Copy assignment operator called" << std::endl;
 	if (this != &other)
 		_value = other._value;
 	return *this;
 }
 
-Fixed::~Fixed(void) {
-	std::cout << "Destructor called" << std::endl;
-}
+Fixed::~Fixed(void) {}
 
 int Fixed::getRawBits(void) const {
 	return _value;
@@ -100,6 +89,10 @@ Fixed Fixed::operator*(const Fixed& rhs) const {
 }
 
 Fixed Fixed::operator/(const Fixed& rhs) const {
+	if (rhs._value == 0) {
+		std::cerr << "Fixed: division by zero" << std::endl;
+		return Fixed();
+	}
 	Fixed r;
 	r.setRawBits(static_cast<int>((static_cast<long long>(_value) << _fractBits) / rhs._value));
 	return r;
