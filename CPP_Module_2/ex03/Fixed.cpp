@@ -6,7 +6,7 @@
 /*   By: yesoytur <yesoytur@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 15:18:49 by yesoytur          #+#    #+#             */
-/*   Updated: 2026/04/22 15:18:50 by yesoytur         ###   ########.fr       */
+/*   Updated: 2026/04/23 17:42:21 by yesoytur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,6 +100,10 @@ Fixed Fixed::operator*(const Fixed& rhs) const {
 }
 
 Fixed Fixed::operator/(const Fixed& rhs) const {
+	if (rhs._value == 0) {
+		std::cerr << "Fixed: division by zero" << std::endl;
+		return Fixed();
+	}
 	Fixed r;
 	r.setRawBits(static_cast<int>((static_cast<long long>(_value) << _fractBits) / rhs._value));
 	return r;
