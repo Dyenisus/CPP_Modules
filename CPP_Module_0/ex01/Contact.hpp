@@ -6,11 +6,9 @@
 /*   By: yesoytur <yesoytur@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 14:45:48 by yesoytur          #+#    #+#             */
-/*   Updated: 2026/04/22 12:07:49 by yesoytur         ###   ########.fr       */
+/*   Updated: 2026/04/23 01:24:35 by yesoytur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#pragma once
 
 #ifndef CONTACTS_HPP
 # define CONTACTS_HPP
@@ -24,7 +22,6 @@
 class Contact
 {
 	private:
-		int			_index;
 		std::string	_firstName;
 		std::string	_lastName;
 		std::string	_nickName;
@@ -40,7 +37,6 @@ class Contact
 								const std::string& nickName,
 								const std::string& phoneNumber,
 								const std::string& darkestSecret);
-		int			getIndex() const;
 		std::string	getFirstName() const;
 		std::string	getLastName() const;
 		std::string	getNickName() const;
