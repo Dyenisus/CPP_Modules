@@ -6,11 +6,13 @@
 /*   By: yesoytur <yesoytur@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 16:36:03 by yesoytur          #+#    #+#             */
-/*   Updated: 2026/04/22 16:36:04 by yesoytur         ###   ########.fr       */
+/*   Updated: 2026/04/23 17:48:10 by yesoytur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef CHARACTER_HPP
+# define CHARACTER_HPP
+
 #include "ICharacter.hpp"
 #include "AMateria.hpp"
 
@@ -29,3 +31,5 @@ public:
 	virtual void unequip(int idx);
 	virtual void use(int idx, ICharacter& target);
 };
+
+#endif

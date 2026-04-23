@@ -6,11 +6,13 @@
 /*   By: yesoytur <yesoytur@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 16:35:55 by yesoytur          #+#    #+#             */
-/*   Updated: 2026/04/22 16:35:56 by yesoytur         ###   ########.fr       */
+/*   Updated: 2026/04/23 17:48:39 by yesoytur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef AMATERIA_HPP
+# define AMATERIA_HPP
+
 #include <string>
 #include "ICharacter.hpp"
 
@@ -27,3 +29,5 @@ public:
 	virtual AMateria* clone() const = 0;
 	virtual void use(ICharacter& target);
 };
+
+#endif
