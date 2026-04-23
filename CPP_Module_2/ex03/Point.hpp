@@ -6,11 +6,9 @@
 /*   By: yesoytur <yesoytur@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 15:20:13 by yesoytur          #+#    #+#             */
-/*   Updated: 2026/04/22 15:20:40 by yesoytur         ###   ########.fr       */
+/*   Updated: 2026/04/23 01:33:37 by yesoytur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#pragma once
 
 #ifndef POINT_HPP
 # define POINT_HPP
