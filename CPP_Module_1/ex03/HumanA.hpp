@@ -6,11 +6,9 @@
 /*   By: yesoytur <yesoytur@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 12:53:40 by yesoytur          #+#    #+#             */
-/*   Updated: 2026/04/22 12:54:04 by yesoytur         ###   ########.fr       */
+/*   Updated: 2026/04/23 01:27:43 by yesoytur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#pragma once
 
 #ifndef HUMANA_HPP
 # define HUMANA_HPP
