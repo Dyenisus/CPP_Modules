@@ -6,12 +6,37 @@
 /*   By: yesoytur <yesoytur@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 13:36:38 by yesoytur          #+#    #+#             */
-/*   Updated: 2026/04/22 13:36:39 by yesoytur         ###   ########.fr       */
+/*   Updated: 2026/04/23 01:31:12 by yesoytur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.hpp"
 #include <iostream>
+
+void Harl::complain(const std::string& level) {
+    std::string levels[4] = { "DEBUG", "INFO", "WARNING", "ERROR" };
+    int levelIndex = -1;
+
+    for (int i = 0; i < 4; i++) {
+        if (levels[i] == level) {
+            levelIndex = i;
+            break;
+        }
+    }
+
+    switch (levelIndex) {
+        case 0: debug();
+                __attribute__((fallthrough));
+        case 1: info();
+                __attribute__((fallthrough));
+        case 2: warning();
+                __attribute__((fallthrough));
+        case 3: error();
+                break;
+        default:
+            std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
+    }
+}
 
 void Harl::debug(void) {
     std::cout << "[ DEBUG ]" << std::endl;
