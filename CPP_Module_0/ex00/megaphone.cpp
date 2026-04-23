@@ -39,4 +39,5 @@ int	main(int ac, char **av)
 		megaphone(av[i]);
 		i++;
 	}
+	std::cout << std::endl;
 }
