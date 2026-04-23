@@ -6,14 +6,13 @@
 /*   By: yesoytur <yesoytur@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 15:55:36 by yesoytur          #+#    #+#             */
-/*   Updated: 2026/04/22 15:55:37 by yesoytur         ###   ########.fr       */
+/*   Updated: 2026/04/23 01:35:39 by yesoytur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef FRAGTRAP_HPP
+# define FRAGTRAP_HPP
 
-#ifndef FLAGRAP_HPP
-# define FLAGRAP_HPP
 #include "ClapTrap.hpp"
 
 class FragTrap : public ClapTrap

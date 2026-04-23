@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef CLAPTRAP_HPP
+# define CLAPTRAP_HPP
 
 #include <string>
 #include <iostream>
@@ -33,3 +34,5 @@ public:
 	void takeDamage(unsigned int amount);
 	void beRepaired(unsigned int amount);
 };
+
+#endif

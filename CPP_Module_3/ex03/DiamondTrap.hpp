@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef DIAMONDTRAP_HPP
+# define DIAMONDTRAP_HPP
 
 #include "ScavTrap.hpp"
 #include "FragTrap.hpp"
@@ -29,3 +30,5 @@ public:
 	void attack(const std::string& target);
 	void whoAmI();
 };
+
+#endif
