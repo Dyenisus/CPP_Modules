@@ -6,11 +6,13 @@
 /*   By: yesoytur <yesoytur@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 16:17:57 by yesoytur          #+#    #+#             */
-/*   Updated: 2026/04/22 16:17:58 by yesoytur         ###   ########.fr       */
+/*   Updated: 2026/04/23 01:37:36 by yesoytur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef WRONGANIMAL_HPP
+# define WRONGANIMAL_HPP
+
 #include <iostream>
 #include <string>
 
@@ -26,3 +28,5 @@ public:
 	std::string const& getType() const;
 	void makeSound() const;
 };
+
+#endif

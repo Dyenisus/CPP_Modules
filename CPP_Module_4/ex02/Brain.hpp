@@ -6,11 +6,13 @@
 /*   By: yesoytur <yesoytur@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 16:35:03 by yesoytur          #+#    #+#             */
-/*   Updated: 2026/04/22 16:35:04 by yesoytur         ###   ########.fr       */
+/*   Updated: 2026/04/23 01:39:29 by yesoytur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef BRAIN_HPP
+# define BRAIN_HPP
+
 #include <iostream>
 #include <string>
 
@@ -26,3 +28,5 @@ public:
 	std::string const& getIdea(int idx) const;
 	void setIdea(int idx, std::string const& idea);
 };
+
+#endif

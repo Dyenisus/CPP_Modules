@@ -6,11 +6,13 @@
 /*   By: yesoytur <yesoytur@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 16:17:44 by yesoytur          #+#    #+#             */
-/*   Updated: 2026/04/22 16:17:45 by yesoytur         ###   ########.fr       */
+/*   Updated: 2026/04/23 01:37:40 by yesoytur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef DOG_HPP
+# define DOG_HPP
+
 #include "Animal.hpp"
 
 class Dog : public Animal {
@@ -22,3 +24,5 @@ public:
 
 	virtual void makeSound() const;
 };
+
+#endif
