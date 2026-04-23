@@ -6,11 +6,9 @@
 /*   By: yesoytur <yesoytur@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 15:08:33 by yesoytur          #+#    #+#             */
-/*   Updated: 2026/04/22 15:09:14 by yesoytur         ###   ########.fr       */
+/*   Updated: 2026/04/23 01:32:48 by yesoytur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#pragma once
 
 #ifndef FIXED_HPP
 # define FIXED_HPP
