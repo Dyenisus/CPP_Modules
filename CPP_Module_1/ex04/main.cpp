@@ -6,7 +6,7 @@
 /*   By: yesoytur <yesoytur@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 13:00:22 by yesoytur          #+#    #+#             */
-/*   Updated: 2026/04/22 13:00:23 by yesoytur         ###   ########.fr       */
+/*   Updated: 2026/04/23 00:53:15 by yesoytur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,17 +35,8 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    std::string content;
-    std::string line;
-    bool first = true;
-    while (std::getline(inFile, line)) {
-        if (!first)
-            content += '\n';
-        content += line;
-        first = false;
-    }
-    if (inFile.eof() && !inFile.bad()) {
-    }
+    std::string content((std::istreambuf_iterator<char>(inFile)),
+                        std::istreambuf_iterator<char>());
     inFile.close();
 
     std::string outFilename = filename + ".replace";
